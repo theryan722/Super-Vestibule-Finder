@@ -1,0 +1,39 @@
+<div data-page="course_professor_viewattendance" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Attendance Records</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="searchbar-overlay"></div>
+    <form class="searchbar searchattendancerecords">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+    <!-- End Search -->
+    <!-- Floating Action Button -->
+    <a id="attendance_viewrecords_fab" onclick="javascript:loadProfessorViewAttendanceData();" class="floating-button" title="View Attendance Data">
+        <i class="fa fa-chart-bar fa-2x" aria-hidden="true"></i>
+    </a>
+    <!-- End Floating Action Button -->
+    <div class="page-content">
+        <div class="list-block media-list">
+            <ul id="attendancerecordslist">
+
+            </ul>
+        </div>
+    </div>
+</div>

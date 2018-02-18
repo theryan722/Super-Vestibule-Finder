@@ -1,0 +1,101 @@
+<div data-page="managemodule_attendance_settings" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Attendance Settings</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-map-marker fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Require GPS Verification</div>
+                            <div class="item-text">Mobile devices are recommended when using this option. </div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managemodule_attendance_requiregpsverification" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_RequireGPSVerification();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-map-marker fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Only Use GPS Verification</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managemodule_attendance_onlygps" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_OnlyUseGPS();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a onclick="javascript:loadManageModule_AttendanceLocations();" class="list-button button-raised item-link">
+                        <i class="fa fa-globe fa-fw" aria-hidden="true"></i> Manage Locations</a>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-magic fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Time Limit</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managemodule_attendance_automatictimer" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_AttendanceTimeLimitEnable();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-clock fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Time Limit (in seconds) (if enabled)</div>
+                            <div class="item-input">
+                                <input type="number" name="managemodule_attendance_timelimit">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_AttendanceTimeLimit();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a onclick="javascript:loadManageModule_AttendanceExportOptions();" class="list-button button-raised item-link">
+                        <i class="fa fa-share-square fa-fw" aria-hidden="true"></i> Record Export Options</a>
+                </li>
+            </ul>
+        </form>
+        <a onclick="javascript:saveManageModuleAttendanceSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

@@ -1,0 +1,53 @@
+<div data-page="courseinfo" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Course Info</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <center><h1 id="courseinfo_name">{{Course Name}}</h1></center>
+        <center><h3 id="courseinfo_subject">{{subject}}</h3></center>
+        <center><h4 id="courseinfo_code">{{coursecode}}</h4></center>
+        <div class="content-block">
+            <div class="content-block-title">Info</div>
+            <div class="card">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a onclick="javascript:loadCourseProfessorsPage();" class="list-button item-link"><i class="fa fa-graduation-cap" aria-hidden="true"></i> View Professors</a>
+                        </li>
+                        <li>
+                            <a onclick="javascript:loadCourseTAsPage();" class="list-button item-link"><i class="fa fa-graduation-cap" aria-hidden="true"></i> View TA's</a>
+                        </li>
+                        <li>
+                            <a href="javascript:loadCourseFAQPage();" class="list-button item-link"><i class="fa fa-question fa-fw" aria-hidden="true"></i> FAQ</a>
+                        </li>
+                        <li id="syllabusitem">
+                            <a id="syllabuslink" href="#" class="list-button item-link"><i class="fa fa-book fa-fw" aria-hidden="true"></i> Syllabus</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-block-title">Other</div>
+            <div class="card">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a href="javascript:leaveCourse();" class="list-button item-link"><i class="fa fa-sign-out" aria-hidden="true"></i> Leave Course</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

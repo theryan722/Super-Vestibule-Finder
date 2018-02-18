@@ -1,0 +1,170 @@
+<div data-page="managecourse_access" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Course Access</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="content-block-title">Course Enroll Link</div>
+        <div class="content-block">
+            <p>
+                <i class="fa fa-link" aria-hidden="true"></i>
+                <span id="display_course_enrollurl" class="allowselect"></span>
+                <a onclick="javascript:displayHelp_CourseEnrollLink();" title="Help/Info" style="float:right;">
+                    <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                </a>
+            </p>
+        </div>
+        <div class="content-block-title">Course Access Settings</div>
+        <form class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-ticket fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Course Code</div>
+                            <div class="item-input">
+                                <input type="text" name="managecourse_access_code">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_CourseCode();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-eye fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Course is visible in course search</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managecourse_access_visible" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_CourseVisibleInCourseSearch();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-unlock-alt fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Require password to enroll</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managecourse_access_requirepassword" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_RequirePasswordToEnroll();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-key fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Password (if require password)</div>
+                            <div class="item-input">
+                                <input type="text" name="managecourse_access_password">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-sign-in fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Enrollment is open</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managecourse_access_enrollmentopen" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_EnrollmentIsOpen();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-hand-paper fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Limit Enrollment</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managecourse_access_limitenrollment" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_LimitEnrollment();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-sort-numeric-up fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Max Enrollment (if limit enrollment)</div>
+                            <div class="item-input">
+                                <input type="number" name="managecourse_access_enrollmentlimit">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_MaxEnrollment();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-clock fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Allow Waitlist</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managecourse_access_allowwaitlist" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_AllowWaitlist();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <a onclick="javascript:saveCourseAccessSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

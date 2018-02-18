@@ -1,0 +1,152 @@
+<div data-page="manageta_permissions" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div id="managetatitle" class="center pagetitle">TA Permissions</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-calendar-check fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Take Attendance</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="manageta_permissions_takeattendance" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_TAPermissionsTakeAttendance();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-calendar fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Manage Attendance</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="manageta_permissions_manageattendance" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_TAPermissionsManageAttendance();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-users fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Manage Students</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="manageta_permissions_managestudents" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_TAPermissionsManageStudents();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-question fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Manage FAQ</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="manageta_permissions_managefaq" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_TAPermissionsManageFAQ();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-comments fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Chat</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="manageta_permissions_chat" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_TAPermissionsChat();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-flask fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Send Questions/Quizzes</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="manageta_permissions_sendquestions" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_TAPermissionsSendQuestions();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-list-ul fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Manage Engage</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="manageta_permissions_manageengage" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_TAPermissionsManageEngage();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <a onclick="javascript:saveManageTAPermissions(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

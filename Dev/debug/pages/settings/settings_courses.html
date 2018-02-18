@@ -1,0 +1,57 @@
+<div data-page="settings_courses" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Courses Settings</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form id="settingsform_useraccount" class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-magic fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Automatically open last course on startup</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="settings_courses_autoloadlastcourse" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_AutoLoadLastCourse();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-exclamation-triangle fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Display warnings for sensitive information</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="settings_courses_sensitiveinfowarning" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_SensitiveWarnings();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <a onclick="javascript:saveCoursesSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

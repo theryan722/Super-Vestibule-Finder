@@ -1,0 +1,280 @@
+<div data-page="engage_createquestion_shortresponse" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Create Short Response Question</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Picture Picker Mobile-->
+    <div class="picker-modal picker-createquestion_uploadphoto">
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <div class="left">Upload Photo</div>
+                <div class="right">
+                    <a href="#" class="link close-picker">Close</a>
+                </div>
+            </div>
+        </div>
+        <div class="picker-modal-inner">
+            <div class="fileupload-wrapper">
+                <div class="file-upload">
+                    <input name="createquestion_file_image" type="file" />
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Picture Picker -->
+    <!-- Picture Picker Desktop-->
+    <div class="popover popover-createquestion_uploadphoto">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+            <div class="fileupload-wrapper">
+                <div class="file-upload">
+                    <input name="createquestion_file_image" type="file" />
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Picture Picker -->
+    <div class="page-content">
+        <div class="content-block-title">Info</div>
+        <div class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-tag fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Name</div>
+                            <div class="item-input">
+                                <input type="text" name="createquestion_name">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_CreateQuestionName();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-question fa-fw fa-lg" style="padding-bottom: 75px;"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Question / Prompt</div>
+                            <div class="item-input">
+                                <textarea id="createquestion_prompt" cols="30" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_CreateQuestionPrompt();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="card">
+            <div class="list-block">
+                <ul>
+                    <li class="createquestion_imageitem">
+                        <center>
+                            <img id="createquestion_imagedisplay" src="#" style="max-height: 300px; max-width: 300px;">
+                        </center>
+                    </li>
+                    <li>
+                        <a onclick="javascript:displayCreateQuestionUploadImageModal(this);" class="list-button item-link">
+                            <i class="fa fa-image" aria-hidden="true"></i> Set Image</a>
+                    </li>
+                    <li class="createquestion_imageitem">
+                        <a onclick="javascript:viewCreateQuestionImageFull();" class="list-button item-link">
+                            <i class="fa fa-expand-alt" aria-hidden="true"></i> View Full Image</a>
+                    </li>
+                    <li class="createquestion_imageitem">
+                        <a onclick="javascript:removeCreateQuestionImage();" class="list-button item-link">
+                            <i class="fa fa-trash" aria-hidden="true"></i> Remove Image</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-block-title engage-timelimit">Time</div>
+        <div class="list-block engage-timelimit">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-magic fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Enable Time Limit</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="createquestion_enabletimelimit" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_CreateQuestionEnableTimeLimit();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div style="float: left; width: 50%" class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-clock fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Time Limit</div>
+                            <div class="item-input">
+                                <input type="number" name="createquestion_timelimit">
+                            </div>
+                        </div>
+                    </div>
+                    <div style="float: right; width: 50%" class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Type</div>
+                            <div class="item-input">
+                                <select id="createquestion_select_timetype">
+                                    <option value="s">Seconds</option>
+                                    <option value="m">Minutes</option>
+                                    <option value="h">Hours</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-block-title">Grading</div>
+        <div class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-chart-line fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Grade this question</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="createquestion_graded" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_GradeThisQuestion();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-sort-numeric-up fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Points if correct</div>
+                            <div class="item-input">
+                                <input type="number" name="createquestion_points">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_PointsIfCorrect();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-block-title">Question</div>
+        <div class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-align-left fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Multiline</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="createquestion_shortresponse_multiline" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_CreateQuestionMultiline();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-check fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">There is a correct answer</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="createquestion_shortresponse_iscorrectanswer" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_ThereIsACorrectAnswer();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-text-height fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Responses are case sensitive</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="createquestion_shortresponse_casesensitive" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_ResponsesAreCaseSensitive();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-check-square fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Correct Answer</div>
+                            <div class="item-input">
+                                <input type="text" name="createquestion_shortresponse_correct">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_CorrectAnswer();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a onclick="javascript:createQuestion_ShortResponse();" class="button button-raised button-fill color-green">Create / Update</a>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+<div data-page="managecourse_courseinfo" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Course Info</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-tag fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Course Name</div>
+                            <div class="item-input">
+                                <input type="text" name="managecourse_courseinfo_name">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-filter fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Course Subject</div>
+                            <div class="item-input">
+                                <select id="managecourse_courseinfo_subject">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-user fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Course Professor</div>
+                            <div class="item-input">
+                                <input type="text" name="managecourse_courseinfo_professor">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+        </form>
+        <a onclick="javascript:saveCourseInfoSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

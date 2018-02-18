@@ -1,0 +1,131 @@
+<div data-page="register_student" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="center pagetitle">Register as Student</div>
+        </div>
+    </div>
+    <div class="page-content login-screen-content">
+        <div class="content-block">
+            <br/>
+            <form id="user_register" class="list-block">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-university fa-fw fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">School</div>
+                                <div class="item-input">
+                                    <select id="register_school" name="register_school">
+                                    </select>
+                                </div>
+                            </div>
+                            <a onclick="javascript:displaySchoolNotListedDialog();" title="Don't see your school listed?">
+                                <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-user fa-fw fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title floating-label">First Name</div>
+                                <div class="item-input">
+                                    <input type="text" name="register_firstname">
+                                </div>
+                            </div>
+                            <a onclick="javascript:displayNameRegisterDialog();" title="Help/Info">
+                                <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-user fa-fw fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title floating-label">Last Name</div>
+                                <div class="item-input">
+                                    <input type="text" name="register_lastname">
+                                </div>
+                            </div>
+                            <a onclick="javascript:displayNameRegisterDialog();" title="Help/Info">
+                                <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-id-card fa-fw fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title floating-label">Student ID</div>
+                                <div class="item-input">
+                                    <input type="number" name="register_studentid">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-envelope fa-fw fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title floating-label">Student Email</div>
+                                <div class="item-input">
+                                    <input type="text" autocorrect="off" autocapitalize="none" autocomplete="off" name="register_email">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-key fa-fw fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title floating-label">Password</div>
+                                <div class="item-input">
+                                    <input type="password" name="register_password" style="padding-right: 20px;">
+                                </div>
+                            </div>
+                            <a onclick="javascript:toggleShowingRegisterPassword();" title="Click to hide or show password">
+                                <i id="registerpasswordtoggle" class="fa fa-eye fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div id="registertermstitle" class="item-title termsitemtitle">I agree to the
+                                    <a href="https://www.engagewhiz.com/policy_tos.html" target="_blank" class="external">Terms</a> &
+                                    <a href="https://www.engagewhiz.com/policy_privacy.html" target="_blank"
+                                        class="external">Privacy Policy</a>
+                                </div>
+                                <div class="item-input">
+                                    <label class="label-switch">
+                                        <input name="register_terms" type="checkbox">
+                                        <div class="checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a onclick="javascript:registerUser('student');" class="button button-raised button-big button-round active">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

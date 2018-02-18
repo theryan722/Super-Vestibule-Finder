@@ -1,0 +1,76 @@
+<div data-page="engage_chat" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div id="chat_title" class="center">Chat</div>
+            <div class="right">
+                <a id="chat_userprofilelink" onclick="#" class="link icon-only" title="View User">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Picture Picker Mobile-->
+    <div class="picker-modal picker-chatsendphoto">
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <div class="left">Send File/Photo</div>
+                <div class="right">
+                    <a href="#" class="link close-picker">Close</a>
+                </div>
+            </div>
+        </div>
+        <div class="picker-modal-inner">
+            <div class="fileupload-wrapper">
+                <div class="file-upload">
+                    <input name="chat_sendphoto_file" type="file" />
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Picture Picker -->
+    <!-- Picture Picker Desktop-->
+    <div class="popover popover-chatsendphoto">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+            <div class="fileupload-wrapper">
+                <div class="file-upload">
+                    <input name="chat_sendphoto_file" type="file" />
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Picture Picker -->
+    <!-- Message Bar -->
+    <div class="toolbar messagebar">
+        <div class="toolbar-inner">
+            <textarea id="messagebox" onkeypress="if(event.keyCode === 13){event.preventDefault();sendChatMessage();}" placeholder="Message"></textarea>
+            <a id="mb_insertlatex" onclick="javascript:chatInsertLatexTag();" class="link icon-only" title="Insert Latex Tag">
+                <i class="fa fa-code fa-lg"></i>
+            </a>
+            <a id="mb_sendphoto" onclick="javascript:displayChatSendPhotoModal(this);" class="link icon-only" title="Send File/Photo">
+                <i class="fa fa-file-plus fa-lg"></i>
+            </a>
+            <a id="mb_sendmessage" onclick="javascript:sendChatMessage();" class="link icon-only" title="Send Message">
+                <i class="fa fa-angle-right fa-2x"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- End Message Bar -->
+    <div id="lastmessagedata"></div>
+    <div class="page-content messages-content infinite-scroll infinite-scroll-top" data-distance="60">
+        <div class="messages">
+
+        </div>
+    </div>
+</div>

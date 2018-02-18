@@ -1,0 +1,38 @@
+<div data-page="settings_network" class="page">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </div>
+                <div class="center pagetitle">Network Settings</div>
+            </div>
+        </div>
+        <div class="page-content">
+            <form id="settingsform_useraccount" class="list-block">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-wifi fa-fw fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title">Offline Mode</div>
+                                <div class="item-input">
+                                    <label class="label-switch">
+                                        <input name="settings_network_offlinemode" type="checkbox">
+                                        <div class="checkbox"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <a onclick="javascript:displayHelp_OfflineMode();" title="Help/Info">
+                                <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+            <a onclick="javascript:saveNetworkSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+        </div>
+    </div>

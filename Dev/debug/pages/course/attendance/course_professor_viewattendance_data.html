@@ -1,0 +1,58 @@
+<div data-page="course_professor_viewattendance_data" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Attendance Data</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <center>
+            <h2>Attendance Trends
+                <a onclick="javascript:displayAttendanceTrendsChartOptionsDialog();" title="Chart Options">
+                    <i class="fa fa-sliders-h fa-lg" aria-hidden="true"></i>
+                </a>
+                <a onclick="javascript:toggleDisplayingAttendanceDataTrendsChart(this);" class="link icon-only" title="Toggle Displaying Chart">
+                    <i class="fa fa-eye-slash"></i>
+                </a>
+                <a onclick="javascript:displayHelp_AttendanceDataTrendsChart();" class="link icon-only" title="Help">
+                    <i class="fa fa-question-circle"></i>
+                </a>
+            </h2>
+        </center>
+        <div id="attendancedata_chart_all" class="c3" style="position: relative;"></div>
+        <center>
+            <h2>Total Attendance
+                <a onclick="javascript:displayAttendanceTotalChartOptionsDialog();" title="Chart Options">
+                    <i class="fa fa-sliders-h fa-lg" aria-hidden="true"></i>
+                </a>
+                <a onclick="javascript:toggleDisplayingAttendanceDataTotalChart(this);" class="link icon-only" title="Toggle Displaying Chart">
+                    <i class="fa fa-eye-slash"></i>
+                </a>
+                <a onclick="javascript:displayHelp_AttendanceDataTotalChart();" class="link icon-only" title="Help">
+                    <i class="fa fa-question-circle"></i>
+                </a>
+            </h2>
+        </center>
+        <div id="attendancedata_chart_total" class="c3" style="max-height: 280px; position: relative;"></div>
+        <center>
+            <h2>Attendance Score
+                <a onclick="javascript:toggleDisplayingAttendanceDataScoreChart(this);" class="link icon-only" title="Toggle Displaying Chart">
+                    <i class="fa fa-eye-slash"></i>
+                </a>
+                <a onclick="javascript:displayHelp_AttendanceDataScoreChart();" class="link icon-only" title="Help">
+                    <i class="fa fa-question-circle"></i>
+                </a>
+            </h2>
+        </center>
+        <div id="attendancedata_chart_score" class="c3" style="max-height: 280px; position: relative;"></div>
+    </div>
+</div>

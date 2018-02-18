@@ -1,0 +1,45 @@
+<div data-page="managestudent_viewattendancerecords" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div id="studentattendancerecord_title" class="center pagetitle"></div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="searchbar-overlay"></div>
+    <form class="searchbar searchstudentattendancerecord">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+    <!-- End Search -->
+    <div class="page-content">
+        <center>
+            <h2>
+                <a onclick="javascript:toggleDisplayingStudentAttendanceRecordChart(this);" class="link icon-only" title="Toggle Displaying Chart">
+                    <i class="fa fa-eye-slash"></i>
+                </a>
+            </h2>
+        </center>
+        <div id="studentattendancerecord_piechart" class="c3" style="max-height: 280px; position: relative;"></div>
+        <center>
+            <h3 id="studentattendancerecord_tot"></h3>
+        </center>
+        <div class="list-block media-list">
+            <ul id="studentattendancerecorditemlist">
+
+            </ul>
+        </div>
+    </div>
+</div>

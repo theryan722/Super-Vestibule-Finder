@@ -1,0 +1,32 @@
+<div data-page="course_student_takeattendance" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Take Attendance</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div id="attendancecodeform" class="list-block">
+            <ul>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Attendance Code</div>
+                        <div class="item-input">
+                            <input type="text" name="enterattendancecode" autocapitalize="none" onkeypress="if(event.keyCode === 13){event.preventDefault();checkinAttendance();}">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-block">
+            <a onclick="javascript:checkinAttendance();" class="button button-big button-fill button-raised color-green">Check in</a>
+        </div>
+        <p id="console"></p>
+        <p>If your professor has GPS verification enabled, you will be required to submit your current location as part of checking
+            in. Please make sure you have enabled location permissions for EngageWhiz.</p>
+    </div>
+</div>

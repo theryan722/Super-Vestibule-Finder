@@ -1,0 +1,62 @@
+<div data-page="course_professor_takeattendance" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Take Attendance</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <center>
+            <i class="fa fa-calendar-check" aria-hidden="true" style="font-size: 7em;"></i>
+        </center>
+        <center>
+            <h1 id="display_attendancecode" style="color: #2196f3; font-size: 5em;">Loading...</h1>
+        </center>
+        <center>
+            <h2 id="display_attendancetimer">Loading...</h2>
+        </center>
+        <center>
+            <p id="display_gpsenabled">
+                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> GPS Attendance is enabled.</p>
+        </center>
+        <center>
+            <p id="display_instructions">Students, please enter the code above now to sign in for attendance.</p>
+        </center>
+        <center>
+            <h3 id="display_checkedin"></h3>
+            <span id="display_attendance_progressbar_checkedin" data-progress="0" class="progressbar"></span>
+        </center>
+        <div class="list-block">
+            <ul>
+                <li id="locationselect" class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Location</div>
+                        <div class="item-input">
+                            <select id="attendance_select_location">
+                            </select>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Name this record</div>
+                        <div class="item-input">
+                            <input type="text" name="attendancerecordname">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="content-block">
+            <a onclick="javascript:finishTakingAttendance(true);" class="button button-big button-fill button-raised color-green">Finish</a>
+            <center>
+                <a onclick="javascript:cancelTakingAttendance(true);" class="button button-fill button-raised color-red" style="max-width: 100px;">Cancel</a>
+            </Center>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,91 @@
+<div data-page="settings_account" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Account Settings</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form id="settingsform_useraccount" class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-university fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">School</div>
+                            <div class="item-input">
+                                <select id="settings_useraccount_school" name="settings_useraccount_school">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-user fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">First Name</div>
+                            <div class="item-input">
+                                <input type="text" name="settings_useraccount_firstname">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayNameRegisterDialog();" title="Information about name">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-user fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Last Name</div>
+                            <div class="item-input">
+                                <input type="text" name="settings_useraccount_lastname">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayNameRegisterDialog();" title="Information about name">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="studentsetting">
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-id-card-o fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Student ID</div>
+                            <div class="item-input">
+                                <input type="number" name="settings_useraccount_studentid">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-envelope fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Student Email</div>
+                            <div class="item-input">
+                                <input type="text" autocorrect="off" autocapitalize="none" autocomplete="off" name="settings_useraccount_email">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <a onclick="javascript:saveAccountSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

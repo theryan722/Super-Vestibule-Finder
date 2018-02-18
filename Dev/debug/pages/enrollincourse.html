@@ -1,0 +1,65 @@
+<div data-page="enrollincourse" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Enroll in Course</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="searchbar-overlay"></div>
+    <form class="searchbar searchcourses">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+        <a onclick="javascript:toggleEnrollInCourseSubjectFilter();" title="Toggle the course subject filter">
+            <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+        </a>
+    </form>
+    <!-- End Search -->
+    <div class="page-content pull-to-refresh-content">
+        <div class="pull-to-refresh-layer">
+            <div class="preloader"></div>
+            <div class="pull-to-refresh-arrow"></div>
+        </div>
+        <div class="list-block subjectfilter">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-filter fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Subject</div>
+                            <div class="item-input">
+                                <select id="enrollincourse_filter_subject">
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="list-block media-list">
+            <ul id="courseslist">
+
+            </ul>
+        </div>
+    </div>
+    <!-- Floating Action Button -->
+    <a onclick="javascript:enterCourseCode();" class="floating-button">
+        <i class="fa fa-ticket fa-2x" aria-hidden="true" title="Enter a course code"></i>
+    </a>
+    <!-- End Floating Action Button -->
+</div>

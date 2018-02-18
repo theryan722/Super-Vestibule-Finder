@@ -1,0 +1,55 @@
+<div data-page="engage_professor_viewquizrecords" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Quiz Record</div>
+            <div class="right">
+                <a id="engagequizrecorddelete" href="#" class="link icon-only">
+                    <i class="fa fa-trash"></i>
+                </a>
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="searchbar-overlay"></div>
+    <form class="searchbar searchengagequizrecords">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+    <!-- End Search -->
+    <!-- Floating Action Button -->
+    <a id="engage_viewrecords_fab" onclick="javascript:loadProfessorViewEngageQuizData();" class="floating-button" title="View Quiz Data">
+        <i class="fa fa-chart-bar fa-2x" aria-hidden="true"></i>
+    </a>
+    <!-- End Floating Action Button -->
+    <div class="page-content">
+        <div class="content-block-title">Quiz Questions</div>
+        <div class="list-block media-list">
+            <ul id="engagequizrecordslist">
+
+            </ul>
+        </div>
+        <div class="content-block-title quizgradesitem">Grades</div>
+        <p class="buttons-row quizgradesitem">
+            <a onclick="javascript:showEngageQuizRecordStudentGrades();" class="button button-fill button-raised">
+                <i class="fa fa-eye fa-lg" aria-hidden="true"></i> Show Grades</a>
+            <a onclick="javascript:hideEngageQuizRecordStudentGrades();" class="button button-fill button-raised">
+                <i class="fa fa-eye-slash fa-lg" aria-hidden="true"></i> Hide Grades</a>
+        </p>
+        <div class="list-block media-list quizgradesitem">
+            <ul id="engagequizrecordslist_grades">
+
+            </ul>
+        </div>
+    </div>
+</div>

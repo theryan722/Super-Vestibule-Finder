@@ -1,0 +1,61 @@
+<div data-page="managemodule_engage_settings" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Engage Settings</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <form class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-comments fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Allow students to chat with TA's and professors</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managemodule_engage_enablechat" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_AllowStudentsToChatWithTAsAndProfessors();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-chart-pie fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Exclude quiz records from engage data</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managemodule_engage_excludequizrecords" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_ExcludeQuizRecordsFromEngageData();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a onclick="javascript:loadManageModule_EngageExportOptions();" class="list-button button-raised item-link">
+                        <i class="fa fa-share-square fa-fw" aria-hidden="true"></i> Record Export Options</a>
+                </li>
+            </ul>
+        </form>
+        <a onclick="javascript:saveManageModuleEngageSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

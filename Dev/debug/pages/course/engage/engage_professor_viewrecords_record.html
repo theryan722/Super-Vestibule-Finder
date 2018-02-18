@@ -1,0 +1,91 @@
+<div data-page="engage_professor_viewrecords_record" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div id="engagerecordtitle" class="center pagetitle">Engage Record</div>
+            <div class="right">
+                <a id="engagerecorddelete" href="#" class="link icon-only">
+                    <i class="fa fa-trash"></i>
+                </a>
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="searchbar-overlay"></div>
+    <form class="searchbar searchengagerecord">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+    <!-- End Search -->
+    <!-- Floating Action Button -->
+    <a onclick="javascript:displaySortEngageRecordsDialog();" class="floating-button">
+        <i class="fa fa-sort fa-2x" aria-hidden="true"></i>
+    </a>
+    <!-- End Floating Action Button -->
+    <div class="page-content">
+         <!-- ==== Popup Full Result ==== -->
+         <div class="popup popup-fullresult">
+                <a href="#" class="close-popup" style="float: right;">
+                    <i class="fa fa-window-close fa-3x" aria-hidden="true"></i>
+                </a>
+                <div class="content-block">
+                    <div class="content-block">
+                        <h3 id="popup-fullresult-name"></h3>
+                    </div>
+                    <div class="content-block-title">Result</div>
+                    <div class="content-block">
+                        <p id="popup-fullresult-body" style="font-size: large;"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- ==== End Popup Full Result ==== -->
+        <div class="content-block-title">Question</div>
+        <div class="content-block">
+            <h3 id="origquestion_name"></h3>
+            <h3 id="origquestion_graded"></h3>
+            <h3 id="origquestion_type"></h3>
+            <h3 id="origquestion_prompt"></h3>
+            <div id="origquestion_options"></div>
+        </div>
+        <center>
+            <h2>Results
+                <a onclick="javascript:toggleDisplayingEngageRecordResultsChart(this);" class="link icon-only" title="Toggle Displaying Chart">
+                    <i class="fa fa-eye-slash"></i>
+                </a>
+            </h2>
+        </center>
+        <div id="engage_piechart" class="c3" style="max-height: 280px; position: relative;"></div>
+        <center>
+            <h2 id="engage_record_responsecharttitle">Responses
+                <a onclick="javascript:toggleDisplayingEngageRecordResponsesChart(this);" class="link icon-only" title="Toggle Displaying Chart">
+                    <i class="fa fa-eye-slash"></i>
+                </a>
+            </h2>
+        </center>
+        <div id="engage_responsechart" class="c3" style="max-height: 280px; position: relative;"></div>
+        <center>
+            <h3 id="engagerecord_tot"></h3>
+        </center>
+        <p class="buttons-row">
+            <a onclick="javascript:showEngageRecordStudentResults();" class="button button-fill button-raised">
+                <i class="fa fa-eye fa-lg" aria-hidden="true"></i> Show Student Results</a>
+            <a onclick="javascript:hideEngageRecordStudentResults();" class="button button-fill button-raised">
+                <i class="fa fa-eye-slash fa-lg" aria-hidden="true"></i> Hide Student Results</a>
+        </p>
+        <div class="list-block media-list">
+            <ul id="engagerecorditemlist">
+
+            </ul>
+        </div>
+    </div>
+</div>

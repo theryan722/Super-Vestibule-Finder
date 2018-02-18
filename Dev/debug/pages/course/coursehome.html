@@ -1,0 +1,74 @@
+<div data-page="coursehome" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div id="coursehome_title" class="center pagetitle">Course Home</div>
+            <div class="right">
+                <a onclick="javascript:loadCourseInfoPage();" class="link icon-only courseinfobutton">
+                    <i class="fa fa-info-circle"></i>
+                </a>
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Professor Speed Dial -->
+    <div class="speed-dial professor-fab">
+        <a href="#" class="floating-button">
+            <i class="fa fa-bars fa-2x"></i>
+            <!-- Second icon visible when menu is open -->
+            <i class="fa fa-times fa-2x"></i>
+        </a>
+        <div class="speed-dial-buttons">
+            <a onclick="javascript:loadManageCoursePage();" title="Manage Course">
+                <i class="fa fa-cog"></i>
+            </a>
+            <a href="javascript:loadConversationsPage();" class="engage-module" title="Chat">
+                <i class="fa fa-comments"></i>
+            </a>
+            <a href="javascript:loadEngage_QuestionBankPage();" class="engage-module" title="Question Bank">
+                <i class="fa fa-archive"></i>
+            </a>
+            <a href="javascript:returnToActiveEngageSession();" class="engage-module" title="Active Engage Session">
+                <i class="fa fa-list-ol"></i>
+            </a>
+            <a onclick="javascript:loadProfessorTakeAttendance();" class="attendance-module" title="Take Attendance">
+                <i class="fa fa-calendar-check"></i>
+            </a>
+        </div>
+    </div>
+    <!-- End Speed Dial -->
+    <!-- Student Speed Dial -->
+    <div class="speed-dial student-fab">
+        <a href="#" class="floating-button">
+            <i class="fa fa-bars fa-2x"></i>
+            <!-- Second icon visible when menu is open -->
+            <i class="fa fa-times fa-2x"></i>
+        </a>
+        <div class="speed-dial-buttons">
+            <!-- <a href="#" title="Course Options">
+                <i class="fa fa-cog"></i>
+            </a> -->
+            <a href="javascript:loadConversationsPage();" class="engage-module" title="Chat">
+                <i class="fa fa-comments"></i>
+            </a>
+            <a href="javascript:loadStudentRespondToQuestion();" class="engage-module" title="Active Engage Session">
+                <i class="fa fa-list-ol"></i>
+            </a>
+            <a href="javascript:loadStudentTakeAttendance();" class="attendance-module" title="Take Attendance">
+                <i class="fa fa-calendar-check"></i>
+            </a>
+        </div>
+    </div>
+    <!-- End Speed Dial -->
+    <div class="page-content">
+        <div id="coursecontentlist">
+
+        </div>
+    </div>
+</div>

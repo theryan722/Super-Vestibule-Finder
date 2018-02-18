@@ -1,0 +1,47 @@
+<div data-page="engage_professor_viewrecords_data" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Engage Data</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <center>
+            <h2>Engage Trends
+                <a onclick="javascript:displayEngageTrendsChartOptionsDialog();" title="Chart Options">
+                    <i class="fa fa-sliders-h fa-lg" aria-hidden="true"></i>
+                </a>
+                <a onclick="javascript:toggleDisplayingEngageDataTrendsChart(this);" class="link icon-only" title="Toggle Displaying Chart">
+                    <i class="fa fa-eye-slash"></i>
+                </a>
+                <a onclick="javascript:displayHelp_EngageDataTrendsChart();" class="link icon-only" title="Help">
+                    <i class="fa fa-question-circle"></i>
+                </a>
+            </h2>
+        </center>
+        <div id="engagedata_chart_all" class="c3" style="position: relative;"></div>
+        <center>
+            <h2>Total Results
+                <a onclick="javascript:displayEngageTotalChartOptionsDialog();" title="Chart Options">
+                    <i class="fa fa-sliders-h fa-lg" aria-hidden="true"></i>
+                </a>
+                <a onclick="javascript:toggleDisplayingEngageDataTotalChart(this);" class="link icon-only" title="Toggle Displaying Chart">
+                    <i class="fa fa-eye-slash"></i>
+                </a>
+                <a onclick="javascript:displayHelp_EngageDataTotalChart();" class="link icon-only" title="Help">
+                    <i class="fa fa-question-circle"></i>
+                </a>
+            </h2>
+        </center>
+        <div id="engagedata_chart_total" class="c3" style="max-height: 280px; position: relative;"></div>
+    </div>
+</div>

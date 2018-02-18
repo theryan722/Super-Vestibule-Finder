@@ -1,0 +1,142 @@
+<div data-page="managecourse" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Manage Course</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Picture Picker Desktop-->
+    <div class="popover popover-syllabus">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+            <div class="fileupload-wrapper">
+                <div class="file-upload">
+                    <input name="managecourse_upload_syllabus" type="file" />
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Picture Picker -->
+    <div class="page-content">
+        <div class="content-block-title">Course</div>
+        <div class="card">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_CourseInfoPage();" class="list-button item-link">
+                            <i class="fa fa-info fa-fw" aria-hidden="true"></i> Course Info</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_CourseModulesPage();" class="list-button item-link">
+                            <i class="fa fa-th-large fa-fw" aria-hidden="true"></i> Course Modules</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_FAQ();" class="list-button item-link">
+                            <i class="fa fa-question fa-fw" aria-hidden="true"></i> FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#" data-popover=".popover-syllabus" class="list-button item-link open-popover">
+                            <i class="fa fa-book fa-fw" aria-hidden="true"></i> Upload Syllabus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-block-title">Enrollment</div>
+        <div class="card">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_AccessPage();" class="list-button item-link">
+                            <i class="fa fa-sign-in fa-fw" aria-hidden="true"></i> Course Access</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_EnrolledStudents();" class="list-button item-link">
+                            <i class="fa fa-users fa-fw" aria-hidden="true"></i> Enrolled Students</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_Waitlist();" class="list-button item-link">
+                            <i class="fa fa-clock fa-fw" aria-hidden="true"></i> Waitlist</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-block-title">Roles</div>
+        <div class="card">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_Professors();" class="list-button item-link">
+                            <i class="fa fa-users fa-fw" aria-hidden="true"></i> Professors</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_tas();" class="list-button item-link">
+                            <i class="fa fa-users fa-fw" aria-hidden="true"></i> TA's</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-block-title">You</div>
+        <div class="card">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a onclick="javascript:loadManageCourse_StaffInfo();" class="list-button item-link">
+                            <i class="fa fa-id-badge fa-fw" aria-hidden="true"></i> Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-block-title attendance-module">Attendance Module</div>
+        <div class="card attendance-module">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a onclick="javascript:loadManageModule_AttendanceSettings();" class="list-button item-link">
+                            <i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Attendance Settings</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:loadProfessorViewAttendance();" class="list-button item-link">
+                            <i class="fa fa-calendar-alt fa-fw" aria-hidden="true"></i> Attendance Records</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:exportAttendanceRecords();" class="list-button item-link">
+                            <i class="fa fa-share-square fa-fw" aria-hidden="true"></i> Export Attendance Records</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content-block-title engage-module">Engage Module</div>
+        <div class="card engage-module">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a onclick="javascript:loadManageModule_EngageSettings();" class="list-button item-link">
+                            <i class="fa fa-toggle-on fa-fw" aria-hidden="true"></i> Engage Settings</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:loadEngage_QuestionBankPage();" class="list-button item-link">
+                            <i class="fa fa-archive fa-fw" aria-hidden="true"></i> Question Bank</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:loadProfessorViewEngageRecords();" class="list-button item-link">
+                            <i class="fa fa-list-ol fa-fw" aria-hidden="true"></i> Engage Records</a>
+                    </li>
+                    <li>
+                        <a onclick="javascript:exportEngageGrades();" class="list-button item-link">
+                            <i class="fa fa-share-square fa-fw" aria-hidden="true"></i> Export Engage Grades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

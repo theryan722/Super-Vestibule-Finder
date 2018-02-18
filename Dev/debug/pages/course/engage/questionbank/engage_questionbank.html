@@ -1,0 +1,46 @@
+<div data-page="engage_questionbank" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Question Bank</div>
+            <div class="right">
+                <a onclick="javascript:displayQuestionBankFilterDialog();" class="link icon-only" title="Change Filter">
+                    <i class="fa fa-filter"></i>
+                </a>
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Search -->
+    <div class="searchbar-overlay"></div>
+    <form class="searchbar searchquestionbank">
+        <div class="searchbar-input">
+            <input type="search" placeholder="Search">
+            <a href="#" class="searchbar-clear"></a>
+        </div>
+        <a href="#" class="searchbar-cancel">Cancel</a>
+    </form>
+    <!-- End Search -->
+    <!-- Floating Action Button -->
+    <a onclick="javascript:displayCreateQuestionBankItemDialog();" class="floating-button" title="Create Question/Quiz">
+        <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+    </a>
+    <!-- End Floating Action Button -->
+    <div class="page-content pull-to-refresh-content">
+        <div class="pull-to-refresh-layer">
+            <div class="preloader"></div>
+            <div class="pull-to-refresh-arrow"></div>
+        </div>
+        <div class="list-block media-list">
+            <ul id="questionbanklist">
+
+            </ul>
+        </div>
+    </div>
+</div>

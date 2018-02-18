@@ -1,0 +1,58 @@
+<div data-page="managecourse_courseinfo" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Course Modules</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <p>Enabled modules will require students in your course to have the matching subscription to access your course.</p>
+        <form class="list-block">
+            <ul>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-calendar-check fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Attendance</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managecourse_coursemodules_attendance" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_AttendanceModule();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-flask fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title">Engage</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                    <input name="managecourse_coursemodules_engage" type="checkbox">
+                                    <div class="checkbox"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_EngageModule();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <a onclick="javascript:saveCourseModulesSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

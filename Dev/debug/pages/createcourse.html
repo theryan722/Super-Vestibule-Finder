@@ -1,0 +1,82 @@
+<div data-page="createcourse" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Create Course</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content login-screen-content">
+        <div class="content-block">
+            <br/>
+            <form id="user_register" class="list-block">
+                <ul>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-tag fa-fw fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title floating-label">Course Name</div>
+                                <div class="item-input">
+                                    <input type="text" name="createcourse_name">
+                                </div>
+                            </div>
+                            <a onclick="javascript:displayHelp_CourseName();" title="Help/Info">
+                                <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-ticket fa-sign-in fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title floating-label">Course Code</div>
+                                <div class="item-input">
+                                    <input type="text" name="createcourse_code">
+                                </div>
+                            </div>
+                            <a onclick="javascript:displayHelp_CourseCode();" title="Help/Info">
+                                <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media">
+                                <i class="fa fa-filter fa-lg"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title floating-label">Subject</div>
+                                <div class="item-input">
+                                    <select id="createcourse_subject">
+                                    </select>
+                                </div>
+                            </div>
+                            <a onclick="javascript:displayHelp_CourseSubject();" title="Help/Info">
+                                <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <a onclick="javascript:createCourse();" class="button button-raised button-big button-round active">Create</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,189 @@
+<div data-page="managemodule_engage_exportoptions" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Engage Record Export Options</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="list-block accordion-list">
+            <ul>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">First Name Column</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="fa fa-check-circle fa-fw fa-lg"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Include this Column</div>
+                                            <div class="item-input">
+                                                <label class="label-switch">
+                                                    <input name="exportoptions_engage_firstnameinclude" type="checkbox">
+                                                    <div class="checkbox"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <a onclick="javascript:displayHelp_IncludeThisColumn();" title="Help/Info">
+                                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="fa fa-tag fa-fw fa-lg"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title floating-label">Text</div>
+                                            <div class="item-input">
+                                                <input type="text" name="exportoptions_engage_firstnametext">
+                                            </div>
+                                        </div>
+                                        <a onclick="javascript:displayHelp_ColumnText();" title="Help/Info">
+                                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="fa fa-columns fa-fw fa-lg"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Column</div>
+                                            <div class="item-input">
+                                                <select id="exportoptions_engage_firstnamecolumn">
+                                                    <option value="1">Column 1</option>
+                                                    <option value="2">Column 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <a onclick="javascript:displayHelp_ColumnNumber();" title="Help/Info">
+                                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <a href="#" class="item-content item-link">
+                        <div class="item-inner">
+                            <div class="item-title">Last Name Column</div>
+                        </div>
+                    </a>
+                    <div class="accordion-item-content">
+                        <div class="list-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="fa fa-check-circle fa-fw fa-lg"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Include this Column</div>
+                                            <div class="item-input">
+                                                <label class="label-switch">
+                                                    <input name="exportoptions_engage_lastnameinclude" type="checkbox">
+                                                    <div class="checkbox"></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <a onclick="javascript:displayHelp_IncludeThisColumn();" title="Help/Info">
+                                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="fa fa-tag fa-fw fa-lg"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title floating-label">Text</div>
+                                            <div class="item-input">
+                                                <input type="text" name="exportoptions_engage_lastnametext">
+                                            </div>
+                                        </div>
+                                        <a onclick="javascript:displayHelp_ColumnText();" title="Help/Info">
+                                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="fa fa-columns fa-fw fa-lg"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title">Column</div>
+                                            <div class="item-input">
+                                                <select id="exportoptions_engage_lastnamecolumn">
+                                                    <option value="1">Column 1</option>
+                                                    <option value="2">Column 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <a onclick="javascript:displayHelp_ColumnNumber();" title="Help/Info">
+                                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <form class="list-block">
+            <ul>
+                <li class="temphideitem">
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-check-square fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Delimiter for Correct</div>
+                            <div class="item-input">
+                                <input type="text" name="exportoptions_engage_correctdelimiter">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_CorrectDelimiter();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="temphideitem">
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="fa fa-times-square fa-fw fa-lg"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-title floating-label">Delimiter for Incorrect</div>
+                            <div class="item-input">
+                                <input type="text" name="exportoptions_engage_incorrectdelimiter">
+                            </div>
+                        </div>
+                        <a onclick="javascript:displayHelp_IncorrectDelimiter();" title="Help/Info">
+                            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <a onclick="javascript:saveManageModuleEngageExportSettings(true);" class="button button-big button-fill button-raised color-green">Save</a>
+    </div>
+</div>

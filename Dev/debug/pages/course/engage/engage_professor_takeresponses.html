@@ -1,0 +1,63 @@
+<div data-page="engage_professor_takeresponses" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Take Responses</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <!-- ==== Popup Discussion Feed ==== -->
+        <div class="popup popup-discussionfeed">
+            <a href="#" class="close-popup" style="float: right;">
+                <i class="fa fa-window-close fa-3x" aria-hidden="true"></i>
+            </a>
+            <div class="content-block">
+                <div class="content-block">
+                    <h3 id="popup-discussionfeed-name"></h3>
+                </div>
+                <div class="content-block-title">Post</div>
+                <div class="content-block">
+                    <p id="popup-discussionfeed-body" style="font-size: x-large;"></p>
+                </div>
+            </div>
+        </div>
+        <!-- ==== End Popup Discussion Feed ==== -->
+        <center>
+            <i class="fa fa-list-ol" aria-hidden="true" style="font-size: 7em;"></i>
+        </center>
+        <center>
+            <h1 id="display_questionprompt" style="color: #2196f3; font-size: 3em;">Loading...</h1>
+        </center>
+        <center>
+            <h2 id="display_engagetimer">Loading...</h2>
+        </center>
+        <center>
+            <img id="display_image" src="#" style="max-width: 100%; max-height: 400px;" />
+        </center>
+        <center>
+            <p id="display_engage_instructions">Students, please respond to the question/quiz on your devices now.</p>
+        </center>
+        <center>
+            <h3 id="display_engage_responded"></h3>
+            <span id="display_engage_progressbar_submitted" data-progress="0" class="progressbar"></span>
+        </center>
+        <div class="content-block">
+            <a onclick="javascript:finishTakingResponses(true);" class="button button-big button-fill button-raised color-green">Finish Taking Responses</a>
+            <center>
+                <a onclick="javascript:cancelTakingResponses(true);" class="button button-fill button-raised color-red" style="max-width: 100px;">Cancel</a>
+            </Center>
+        </div>
+        <div id="discussionfeed">
+            <div class="content-block-title">Discussion Feed</div>
+            <div class="list-block media-list">
+                <ul id="discussionfeedlist">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
