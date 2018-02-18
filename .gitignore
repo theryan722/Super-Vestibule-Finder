@@ -78,3 +78,4 @@ Cordova/plugins
 .DS_Store
 /Dev/.DS_Store
 Dev/cordova/config.xml
+Dev/Firebase/public
