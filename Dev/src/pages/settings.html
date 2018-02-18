@@ -1,0 +1,45 @@
+<div data-page="settings" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Settings</div>
+            <div class="right">
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content login-screen-content">
+        <br/>
+        <br/>
+        <div class="login-screen-title">Enter your name</div>
+        <!-- Login form -->
+        <form id="user_login">
+            <div class="list-block">
+                <ul>
+                    <li class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">Name</div>
+                            <div class="item-input">
+                                <input type="text" onkeypress="if(event.keyCode === 13){event.preventDefault();setName();}" name="namefield" autocapitalize="none"
+                                    placeholder="Name">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a onclick="javascript:setName();" class="button button-raised">Enter</a>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
