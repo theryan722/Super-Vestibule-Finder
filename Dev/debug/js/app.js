@@ -32,7 +32,9 @@ function setName() {
     }
 }
 
-
+function addPickupLine() {
+    
+}
 function initializeDeviceOptions() {
     loadElementHtml('#mobilemenu', 'menu/mobilemenu.html', function () {
 
@@ -182,12 +184,12 @@ var mainView = app.addView('.view-main', {
 
 //------ Initialize Firebase ----------
 var firebaseconfig = {
-    apiKey: "AIzaSyAB7vq4NNBFMpuKxwAQBhstrBS-Ut6nZ5U",
-    authDomain: "pennapps-7bdee.firebaseapp.com",
-    databaseURL: "https://pennapps-7bdee.firebaseio.com",
-    projectId: "pennapps-7bdee",
-    storageBucket: "pennapps-7bdee.appspot.com",
-    messagingSenderId: "946877271388"
+    apiKey: "AIzaSyBK4F2Ym71rXJW449pvglzETVvl63aEy88",
+    authDomain: "super-vestibule-finder.firebaseapp.com",
+    databaseURL: "https://super-vestibule-finder.firebaseio.com",
+    projectId: "super-vestibule-finder",
+    storageBucket: "super-vestibule-finder.appspot.com",
+    messagingSenderId: "215517658982"
 };
 firebase.initializeApp(firebaseconfig);
 
@@ -212,6 +214,10 @@ function loadVestibuleFinderPage() {
 
 function loadPickupLinesPage() {
     mainView.router.loadPage('pages/pickuplines.html');
+}
+
+function loadRidSomeonePage() {
+    mainView.router.loadPage('pages/ridsomeone.html');
 }
 app.onPageInit('*', function (page) {
     if (page.name !== null) {

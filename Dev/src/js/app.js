@@ -32,3 +32,6 @@ function setName() {
     }
 }
 
+function addPickupLine() {
+    
+}

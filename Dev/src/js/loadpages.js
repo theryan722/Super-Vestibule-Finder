@@ -17,3 +17,7 @@ function loadVestibuleFinderPage() {
 function loadPickupLinesPage() {
     mainView.router.loadPage('pages/pickuplines.html');
 }
+
+function loadRidSomeonePage() {
+    mainView.router.loadPage('pages/ridsomeone.html');
+}
