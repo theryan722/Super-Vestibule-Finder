@@ -5,6 +5,7 @@ var loading = false; //Used to determine if infinite scroll or pull to refresh i
 //==================================
 var pickuptimerstarted = false;
 var alarmaudio;
+var currentvestibule;
 //==================================
 const appversion = '1.0.0'; //Version of the app
 const modalcancelbutton = {

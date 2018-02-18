@@ -21,3 +21,8 @@ function loadPickupLinesPage() {
 function loadRidSomeonePage() {
     mainView.router.loadPage('pages/ridsomeone.html');
 }
+
+function loadVestibuleReviewsPage(id) {
+    currentvestibule = id;
+    mainView.router.loadPage('pages/vestibulereviews.html');
+}

@@ -1,0 +1,43 @@
+<div data-page="vestibulereviews" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="back link">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="center pagetitle">Vestibule Reviews</div>
+            <div class="right">
+                <a onclick="javascript:setVestibuleDescription();" class="link icon-only">
+                    <i class="fa fa-info"></i>
+                </a>
+                <a onclick="javascript:loadVestibuleReviews();" class="link icon-only">
+                    <i class="fa fa-refresh"></i>
+                </a>
+                <a href="#" class="link icon-only open-panel mobilemenubutton">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-content">
+        <h2 id="vestibuletitle"></h2>
+        <center>
+            <img id="vestibuleimg" style="max-width: 192px; max-height: 200px"></img>
+        </center>
+        <p id="vestibuledescription"></p>
+        <div class="content-block">
+            <div class="list-block media-list">
+                <div class="Content-block-title">Reviews</div>
+                <ul id="reviewlist">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Floating Action Button -->
+    <a onclick="javascript:addReview();" class="floating-button">
+        <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+    </a>
+    <!-- End Floating Action Button -->
+</div>

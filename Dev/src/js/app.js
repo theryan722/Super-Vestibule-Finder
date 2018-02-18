@@ -58,7 +58,6 @@ function addPickupLine() {
 }
 
 function loadPickupLines() {
-    console.log('wee')
     firebase.firestore().collection('pickuplines').orderBy('timestamp', 'desc').get().then(function (pls) {
         let first = true;
         pls.forEach(function (doc) {
@@ -98,4 +97,115 @@ function ridPerson() {
 function stopAlarm() {
     alarmaudio.pause();
     alarmaudio.currentTime = 0;
+}
+
+function loadVestibules() {
+    firebase.firestore().collection('vestibules').get().then(function (pls) {
+        let first = true;
+        pls.forEach(function (doc) {
+            if (first) {
+                first = false;
+                $$('#vestibulelist').html('');
+            }
+            let fritem = nunjucks.render('vestibuleitemtemplate.html', {
+                name: doc.data().name,
+                vestibuleid: doc.id
+            });
+            $$('#vestibulelist').append(fritem);
+        });
+        if (first) {
+            $$('#vestibulelist').html('<center><h3>No vestibules.</h3></center>')
+        }
+    });
+}
+
+function addVestibule() {
+    app.prompt('Enter a name for this vestibule', 'Enter Name', function (vname) {
+        firebase.firestore().collection('vestibules').add({
+            name: vname,
+            description: 'No description'
+        }).then(function () {
+            loadVestibules();
+            app.addNotification({
+                message: 'Added vestibule!'
+            });
+        });
+    })
+}
+
+function loadVestibuleReviews() {
+    if (currentvestibule) {
+        firebase.firestore().collection('vestibules').doc(currentvestibule).get().then(function (vinfo) {
+            if (vinfo.data().image) {
+                $$('#vestibuleimg').attr('src', vinfo.data().image);
+            }
+            $$('#vestibuletitle').html(vinfo.data().name);
+            $$('#vestibuledescription').html(vinfo.data().description);
+        }).then(function () {
+            firebase.firestore().collection('vestibules').doc(currentvestibule).collection('reviews').orderBy('timestamp', 'desc').get().then(function (reviews) {
+                let first = true;
+                reviews.forEach(function (review) {
+                    if (first) {
+                        first = false;
+                        $$('#reviewlist').html('');
+                    }
+                    let fritem = nunjucks.render('reviewitemtemplate.html', {
+                        name: review.data().name,
+                        body: review.data().body,
+                        good: review.data().good,
+                        timestamp: formatTimeStamp(review.data().timestamp.getTime())
+                    });
+                    $$('#reviewlist').append(fritem);
+                });
+                if (first) {
+                    $$('#reviewlist').html('<center><h3>No reviews.</h3></center>')
+                }
+            });
+        });
+    }
+}
+
+function addReview() {
+    app.confirm('Was this vestibule good?', function () {
+        app.prompt('Enter a review for this vestibule', 'Enter Review', function (rev) {
+            firebase.firestore().collection('vestibules').doc(currentvestibule).collection('reviews').add({
+                name: currentuser.name,
+                body: rev,
+                good: true,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            }).then(function () {
+                loadVestibuleReviews();
+                app.addNotification({
+                    message: 'Added review!'
+                });
+            });
+        })
+    }, function () {
+        app.prompt('Enter a review for this vestibule', 'Enter Review', function (rev) {
+            firebase.firestore().collection('vestibules').doc(currentvestibule).collection('reviews').add({
+                name: currentuser.name,
+                body: rev,
+                good: false,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            }).then(function () {
+                loadVestibuleReviews();
+                app.addNotification({
+                    message: 'Added review!'
+                });
+            });
+        })
+    });
+}
+
+function setVestibuleDescription() {
+    app.prompt('Enter a description', 'New Description', function (desc) {
+        firebase.firestore().collection('vestibules').doc(currentvestibule).update({
+            description: desc
+        }).then(function () {
+            app.addNotification({message: 'Added description'});
+            goBack().then(function () {
+                loadVestibuleReviewsPage(currentvestibule);
+            });
+        });
+    });
 }

@@ -22,7 +22,14 @@ app.onPageInit('pickuplines', function (page) {
     runPickupLineTimer();
 });
 
+app.onPageInit('vestibulefinder', function (page) {
+    loadVestibules();
+});
+
+app.onPageInit('vestibulereviews', function (page) {
+    loadVestibuleReviews();
+});
+
 app.onPageBeforeRemove('ridsomeone', function (page) {
-    console.log('wtf')
     stopAlarm()
 });
