@@ -88,5 +88,14 @@ function runPickupLineTimer() {
             }
         }, 3000)
     }
+}
 
+function ridPerson() {
+    alarmaudio = new Audio('img/alarm.mp3');
+    alarmaudio.play();
+}
+
+function stopAlarm() {
+    alarmaudio.pause();
+    alarmaudio.currentTime = 0;
 }

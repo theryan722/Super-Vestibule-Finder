@@ -21,3 +21,8 @@ app.onPageInit('pickuplines', function (page) {
     loadPickupLines();
     runPickupLineTimer();
 });
+
+app.onPageBeforeRemove('ridsomeone', function (page) {
+    console.log('wtf')
+    stopAlarm()
+});

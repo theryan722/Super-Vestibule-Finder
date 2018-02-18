@@ -4,6 +4,7 @@ var iscordova = false; //If cordova
 var loading = false; //Used to determine if infinite scroll or pull to refresh is loading
 //==================================
 var pickuptimerstarted = false;
+var alarmaudio;
 //==================================
 const appversion = '1.0.0'; //Version of the app
 const modalcancelbutton = {

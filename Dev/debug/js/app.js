@@ -88,7 +88,16 @@ function runPickupLineTimer() {
             }
         }, 3000)
     }
+}
 
+function ridPerson() {
+    alarmaudio = new Audio('img/alarm.mp3');
+    alarmaudio.play();
+}
+
+function stopAlarm() {
+    alarmaudio.pause();
+    alarmaudio.currentTime = 0;
 }
 function initializeDeviceOptions() {
     loadElementHtml('#mobilemenu', 'menu/mobilemenu.html', function () {
@@ -203,6 +212,7 @@ var iscordova = false; //If cordova
 var loading = false; //Used to determine if infinite scroll or pull to refresh is loading
 //==================================
 var pickuptimerstarted = false;
+var alarmaudio;
 //==================================
 const appversion = '1.0.0'; //Version of the app
 const modalcancelbutton = {
@@ -294,6 +304,11 @@ app.onPageInit('about', function (page) {
 app.onPageInit('pickuplines', function (page) {
     loadPickupLines();
     runPickupLineTimer();
+});
+
+app.onPageBeforeRemove('ridsomeone', function (page) {
+    console.log('wtf')
+    stopAlarm()
 });
 function goBack() {
     return new Promise(function (resolve, reject) {
