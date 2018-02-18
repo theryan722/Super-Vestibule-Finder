@@ -3,22 +3,22 @@
     "name": "Super-Vestibule-Finder",
     "icons": [
         {
-            "src": "img/icon/RestrainAlert_Logo_48.png",
+            "src": "img/icon/logo_48.png",
             "type": "image/png",
             "sizes": "48x48"
         },
         {
-            "src": "img/icon/favicon-96x96.png",
+            "src": "img/icon/logo_96.png",
             "type": "image/png",
             "sizes": "96x96"
         },
         {
-            "src": "img/icon/apple-touch-icon-144x144.png",
+            "src": "img/icon/logo_144.png",
             "type": "image/png",
             "sizes": "144x144"
         },
         {
-            "src": "img/icon/RestrainAlert_Logo_192.png",
+            "src": "img/icon/logo_192.png",
             "type": "image/png",
             "sizes": "192x192"
         }

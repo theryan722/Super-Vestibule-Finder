@@ -97,9 +97,11 @@ function checkIfUserInitialized() {
     if (currentuser) {
         loadHomePage();
     } else {
-        if (!updateCurrentUser()) {
+        updateCurrentUser().then(function () {
+            loadHomePage();
+        }).catch(function () {
             loadSettingsPage();
-        }
+        });
     }
 }
 
