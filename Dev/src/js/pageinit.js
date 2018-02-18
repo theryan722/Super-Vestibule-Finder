@@ -19,4 +19,5 @@ app.onPageInit('about', function (page) {
 
 app.onPageInit('pickuplines', function (page) {
     loadPickupLines();
+    runPickupLineTimer();
 });

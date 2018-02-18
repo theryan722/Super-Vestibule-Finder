@@ -46,7 +46,9 @@ function addPickupLine() {
                 name: currentuser.name,
                 body: newline
             }).then(function () {
-                app.addNotification({message: 'Added Pickup Line!'});
+                app.addNotification({
+                    message: 'Added Pickup Line!'
+                });
                 loadPickupLines();
             }).catch(function (error) {
                 app.alert('There was an error attempting to add the pickup line.', 'Error');
@@ -56,6 +58,7 @@ function addPickupLine() {
 }
 
 function loadPickupLines() {
+    console.log('wee')
     firebase.firestore().collection('pickuplines').orderBy('timestamp', 'desc').get().then(function (pls) {
         let first = true;
         pls.forEach(function (doc) {
@@ -74,4 +77,16 @@ function loadPickupLines() {
             $$('#pickuplineslist').html('<center><h3>No pickup lines.</h3></center>')
         }
     });
+}
+
+function runPickupLineTimer() {
+    if (!pickuptimerstarted) {
+        pickuptimerstarted = true;
+        setInterval(function () {
+            if (mainView.activePage.name === 'pickuplines') {
+                loadPickupLines();
+            }
+        }, 3000)
+    }
+
 }
