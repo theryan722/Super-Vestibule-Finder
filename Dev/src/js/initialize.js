@@ -24,20 +24,6 @@ var mainView = app.addView('.view-main', {
 });
 //------ End Initialize Framework7 -------
 
-//====Cordova=======
-if (app.device.iphone || app.device.android) {
-    loadScript('cordova.js');
-}
-document.addEventListener('deviceready', onDeviceReady, false);
-function onDeviceReady() {
-    iscordova = true;
-    if (app.device.android) {
-        document.addEventListener("backbutton", onAndroidBackKeyDown, false);
-        document.addEventListener("menubutton", onAndroidMenuKeyDown, false);
-    }
-    window.open = cordova.InAppBrowser.open;
-}
-//==== End Cordova=====
 //------ Initialize Firebase ----------
 var firebaseconfig = {
     apiKey: "AIzaSyAB7vq4NNBFMpuKxwAQBhstrBS-Ut6nZ5U",

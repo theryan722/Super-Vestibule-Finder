@@ -48,7 +48,10 @@ function setPageURL(pagename, urlparams = undefined) {
             case 'coursehome':
                 location.hash = pagename;
                 setTimeout(function () {
-                    setURLParameters([{ paramname: 'id', paramvalue: currentcourse.courseid }]);
+                    setURLParameters([{
+                        paramname: 'id',
+                        paramvalue: currentcourse.courseid
+                    }]);
                 }, 300);
                 break;
             default:
@@ -94,13 +97,9 @@ function checkIfUserInitialized() {
     if (currentuser) {
         loadHomePage();
     } else {
-        setUserFromLocalStorage().then(function (uset) {
-            if (uset) {
-                loadHomePage();
-            } else {
-                loadLoginPage();
-            }
-        });
+        if (!updateCurrentUser()) {
+            loadSettingsPage();
+        }
     }
 }
 
